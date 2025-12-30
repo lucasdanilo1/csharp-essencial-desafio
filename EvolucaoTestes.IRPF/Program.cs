@@ -20,6 +20,8 @@ class Program {
             double salarioLiquido = valorSalario - desconto;
             Console.WriteLine($"Salário Líquido: R$ {salarioLiquido:N2}");
         }
+
+        Console.WriteLine("\nCálculo finalizado.");
     }
 
     public static int lerNumeroContribuintes() {

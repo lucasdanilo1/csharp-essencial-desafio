@@ -1,4 +1,4 @@
-namespace CalculadoraIRPF;
+namespace CalculadoraIRPF.Services;
 
 public class LeitorEntrada {
     public static int LerNumeroContribuintes() {

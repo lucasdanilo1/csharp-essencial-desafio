@@ -1,5 +1,7 @@
 namespace CalculadoraIRPF;
 
+using CalculadoraIRPF.Services;
+
 class Program {
     static void Main(string[] args) {
         int numContribuintes = LeitorEntrada.LerNumeroContribuintes();

@@ -1,4 +1,4 @@
-namespace CalculadoraIRPF;
+namespace CalculadoraIRPF.Services;
 
 public class NumeroContribuintesInvalidoException : Exception {
     public NumeroContribuintesInvalidoException(string msg) : base(msg) {}

@@ -1,5 +1,6 @@
 namespace CalculadoraIRPF.Tests;
 
+using CalculadoraIRPF.Services;
 using Xunit;
 
 public class CalculadoraDescontoTests

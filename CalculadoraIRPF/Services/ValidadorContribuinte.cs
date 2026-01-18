@@ -1,4 +1,4 @@
-namespace CalculadoraIRPF;
+namespace CalculadoraIRPF.Services;
 
 public class ValidadorContribuinte {
     public static void ValidarNumeroContribuintes(int numContribuintes) {

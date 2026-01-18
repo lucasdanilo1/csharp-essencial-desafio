@@ -1,4 +1,4 @@
-namespace CalculadoraIRPF;
+namespace CalculadoraIRPF.Services;
 
 public class CalculadoraDesconto {
     public static double Calcular(double salarioBruto) {

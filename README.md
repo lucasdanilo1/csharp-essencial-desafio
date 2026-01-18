@@ -4,11 +4,23 @@ Aplicacao console em C# para calculo de Imposto de Renda Pessoa Fisica (IRPF).
 
 ## Funcionalidades
 
-- Calculo de IRPF para multiplos contribuintes
+- Calculo de INSS sobre o salario bruto
+- Calculo de IRPF sobre a base de calculo (salario bruto - INSS)
+- Suporte a multiplos contribuintes
 - Validacao de dados de entrada
-- Exibicao de salario bruto, desconto e salario liquido
+- Exibicao de salario bruto, descontos (INSS e IRPF) e salario liquido
 
-## Tabela de Aliquotas
+## Tabela de Aliquotas do INSS
+
+| Faixa Salarial | Aliquota |
+|----------------|----------|
+| Ate R$ 1.412,00 | 7,5% |
+| R$ 1.412,01 a R$ 2.666,68 | 9% |
+| R$ 2.666,69 a R$ 4.000,03 | 12% |
+| R$ 4.000,04 a R$ 7.786,02 | 14% |
+| Acima de R$ 7.786,02 | Teto R$ 908,86 |
+
+## Tabela de Aliquotas do IRPF
 
 | Faixa Salarial | Aliquota |
 |----------------|----------|
@@ -26,13 +38,14 @@ Aplicacao console em C# para calculo de Imposto de Renda Pessoa Fisica (IRPF).
 ## Como executar
 
 ```bash
-dotnet run --project EvolucaoTestes.IRPF
+dotnet run --project CalculadoraIRPF
 ```
 
 ## Testes
 
 O projeto inclui testes unitarios com xUnit cobrindo:
-- Calculo de desconto por faixa salarial
+- Calculo de INSS por faixa salarial
+- Calculo de IRPF por faixa salarial
 - Validacao de numero de contribuintes
 - Validacao de nome do contribuinte
 - Validacao de formato de salario
